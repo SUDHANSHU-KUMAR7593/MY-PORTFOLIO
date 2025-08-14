@@ -1,0 +1,196 @@
+<!doctype html> <!-- Declares HTML5 document type, so browser knows how to render -->
+<html lang="en"> <!-- Sets language to English for accessibility and SEO -->
+<head>
+  <meta charset="utf-8" /> <!-- Ensures proper character encoding (UTF-8 supports most characters) -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" /> <!-- Makes site responsive on mobile -->
+  <title>Sudhanshu Kumar — Portfolio</title> <!-- Page title in browser tab and SEO -->
+  <meta name="description" content="Sudhanshu Kumar — Aspiring Full Stack Developer. Portfolio." /> <!-- SEO meta description -->
+  <link rel="stylesheet" href="style.css"> <!-- Links external CSS file for styling -->
+  <!-- new or corrected: You could also add a favicon for branding -->
+  <!-- <link rel="icon" href="assets/favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+  <!-- NAVIGATION HEADER -->
+  <header class="site-header"> <!-- Wrapper for top navigation -->
+    <div class="container nav"> <!-- Container for brand, nav links, buttons -->
+      <a class="brand" href="#home">SUDHANSHU KUMAR</a> <!-- Logo/brand linking to home -->
+      <button id="nav-toggle" aria-label="Toggle navigation" class="nav-toggle">☰</button> <!-- Mobile nav menu toggle button -->
+      <!-- new or corrected: You could add aria-expanded attribute toggled via JS for accessibility -->
+      <nav id="main-nav" class="nav-links" aria-label="Main navigation"> <!-- Navigation links with ARIA label for screen readers -->
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button> <!-- Theme mode toggle -->
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main> <!-- Main content of the page -->
+    <section id="home" class="hero"> <!-- Hero intro section -->
+      <div class="container hero-grid"> <!-- Grid layout for hero -->
+        <div class="hero-left"> <!-- Left side with intro text -->
+          <h1>Hello — I'm <span class="name">Sudhanshu Kumar</span></h1> <!-- Main heading -->
+          <h2 class="typing" aria-live="polite"></h2> <!-- Typing effect area, aria-live updates for screen readers -->
+          <p class="lead">
+            Aspiring Full Stack Developer building responsive, accessible web apps...
+          </p>
+          <div class="cta"> <!-- Call-to-action buttons -->
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn outline" href="#contact">Contact Me</a>
+            <a class="btn ghost" href="MYRESUME.pdf" download>Download Resume</a> <!-- 'download' attribute forces file download -->
+            <!-- new or corrected: Add rel="noopener" for security if linking to an external file -->
+          </div>
+        </div>
+        <aside class="hero-card"> <!-- Right side contact card -->
+          <img src="profile.jpg" alt="Sudhanshu Kumar" class="profile-pic"> <!-- Profile image with alt text -->
+          <div class="card-info">
+            <h3>Contact</h3>
+            <p><a href="mailto:sudhanshuagrawal321@gmail.com">sudhanshuagrawal321@gmail.com</a></p> <!-- Mailto link -->
+            <p><a href="tel:+917564817193">+91 7564817193</a></p> <!-- Clickable phone number -->
+            <p>Bhubaneswar, India</p>
+            <hr> <!-- Divider -->
+            <p><a href="https://github.com/SUDHANSHU-KUMAR7593" target="_blank" rel="noopener">GitHub</a></p> <!-- Opens in new tab -->
+            <p><a href="https://www.linkedin.com/in/sudhanshu-kumar-7593" target="_blank" rel="noopener">LinkedIn</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I’m a creative and detail-oriented Full Stack Web-developer...</p>
+        <h3>Education</h3>
+        <div class="edu-grid"> <!-- Education in grid layout -->
+          <div class="edu">
+            <strong>B.Tech — Computer Science & Engineering</strong>
+            <p>Institute of Technical Education and Research (2023 - 2027) — CGPA: 7.81/10</p>
+          </div>
+          <div class="edu">
+            <strong>Senior Secondary (XII) — JAC</strong>
+            <p>Birendra Ayan High School — 82.20% (2022)</p>
+          </div>
+          <div class="edu">
+            <strong>Secondary (X) — CBSE</strong>
+            <p>Dr. Bhabha Public School — 76.50% (2020)</p>
+          </div>
+        </div>
+        <h3>Trainings & Certifications</h3>
+        <ul>
+          <li>Python Workshop Using AI — Jun 2025...</li>
+          <li>Power BI Workshop — July 2025...</li>
+          <li>5 Star Java Badge — HackerRank</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <p>Technical skills and tools I use regularly.</p>
+        <div class="skills-grid"> <!-- Skills displayed in grid -->
+          <div class="skill">
+            <h4>Java</h4>
+            <div class="progress" data-percent="65"><span></span><strong>65%</strong></div> <!-- data-percent used for JS animation -->
+          </div>
+          <div class="skill">
+            <h4>Python</h4>
+            <div class="progress" data-percent="55"><span></span><strong>55%</strong></div>
+          </div>
+          <div class="skill">
+            <h4>JavaScript</h4>
+            <div class="progress" data-percent="55"><span></span><strong>55%</strong></div>
+          </div>
+          <div class="skill">
+            <h4>HTML & CSS</h4>
+            <div class="progress" data-percent="90"><span></span><strong>90%</strong></div>
+          </div>
+          <div class="skill">
+            <h4>Node.js</h4>
+            <div class="progress" data-percent="50"><span></span><strong>50%</strong></div>
+          </div>
+          <div class="skill">
+            <h4>React (basic)</h4>
+            <div class="progress" data-percent="40"><span></span><strong>40%</strong></div>
+          </div>
+          <div class="skill">
+            <h4>Git & GitHub</h4>
+            <div class="progress" data-percent="60"><span></span><strong>60%</strong></div>
+          </div>
+        </div>
+        <br>
+        <h3 class="mt">Other Skills</h3>
+        <br>
+        <p>*Bootstrap · OOP · Data Structures · VS Code*</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <p>Live demos and source links are placeholders...</p>
+        <div class="projects-grid">
+          <article class="project-card"> <!-- Individual project card -->
+            <h3>Scientific Calculator</h3>
+            <p>Web-based calculator with scientific functions...</p>
+            <p class="meta"><strong>Oct 2024 - Nov 2024</strong></p>
+            <div class="project-actions">
+              <a class="btn" href="https://github.com/SUDHANSHU-KUMAR7593/Scientific-Calculator" target="_blank" rel="noopener">GitHub Repo</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>E-commerce Website (Frontend)</h3>
+            <p>Responsive multi-page front-end...</p>
+            <p class="meta"><strong>Oct 2024</strong></p>
+            <div class="project-actions">
+              <!-- new or corrected: Add actual GitHub and live demo links for better portfolio impact -->
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Reach me at <a href="mailto:sudhanshuagrawal321@gmail.com">sudhanshuagrawal321@gmail.com</a> or use the form below.</p>
+        <form id="contact-form" action="https://formspree.io/f/mldlzwvo" method="POST" class="contact-form">
+          <!-- action is Formspree endpoint for form submissions -->
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required> <!-- required attribute forces input -->
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+        <div class="contact-meta">
+          <h4>Other ways to connect</h4>
+          <p>Phone: +91 7564817193</p>
+          <p>Location: Bhubaneswar, India</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="topBtn" title="Back to top">↑</button> <!-- Will be shown via JS when scrolling down -->
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sudhanshu Kumar • Built with ❤️</p>
+      <!-- new or corrected: JavaScript will insert current year into #year -->
+    </div>
+  </footer>
+
+  <script src="script.js"></script> <!-- Links external JS for interactions -->
+</body>
+</html>
